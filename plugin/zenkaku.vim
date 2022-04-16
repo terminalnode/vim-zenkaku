@@ -36,7 +36,7 @@ let s:others = [
 
 function s:ReplaceWithMap(replacementMap)
   for pair in a:replacementMap
-    execute '%s/\C' . pair[0] . '/' . pair[1] . '/g'
+    silent! execute '%s/\C' . pair[0] . '/' . pair[1] . '/g'
   endfor
 endfunction
 
